@@ -1,0 +1,88 @@
+{
+  "name": "plan",
+  "description": "A json template for generating plan",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "plan_one": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "计谋的具体名称"
+          },
+          "strategy": {
+            "type": "string",
+            "description": "策略描述"
+          },
+          "execution": {
+            "type": "string",
+            "description": "具体操作"
+          }
+        },
+        "required": ["name", "strategy", "execution"]
+      },
+      "plan_two": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "计谋的具体名称"
+          },
+          "strategy": {
+            "type": "string",
+            "description": "策略描述"
+          },
+          "execution": {
+            "type": "string",
+            "description": "具体操作"
+          }
+        },
+        "required": ["name", "strategy", "execution"]
+      },
+      "plan_three": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "计谋的具体名称"
+          },
+          "strategy": {
+            "type": "string",
+            "description": "策略描述"
+          },
+          "execution": {
+            "type": "string",
+            "description": "具体操作"
+          }
+        },
+        "required": ["name", "strategy", "execution"]
+      },
+      "execution_plan": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "short_term": {
+            "type": "string",
+            "description": "短期执行方案"
+          },
+          "mid_term": {
+            "type": "string",
+            "description": "中期执行方案"
+          },
+          "long_term": {
+            "type": "string",
+            "description": "长期执行方案"
+          }
+        },
+        "required": ["short_term", "mid_term", "long_term"]
+      }
+    },
+    "required": ["plan_one", "plan_two", "plan_three", "execution_plan"]
+  }
+}
